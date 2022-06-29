@@ -17,11 +17,11 @@
     </div>
     <PwaInstallAlert />
     <div class="page-content-wrapper">
-      <SearchForm />
+      <!--<SearchForm />-->
       <Hero />
       <ProductCategory />
       <FlashSale />
-      <DarkMode />
+      <!--<DarkMode />-->
       <TopProducts />
       <CtaArea />
       <WeeklyBestSellers/>

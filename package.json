@@ -12,6 +12,9 @@
     "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
+    "@capacitor/android": "^3.6.0",
+    "@capacitor/cli": "^3.6.0",
+    "@capacitor/core": "^3.6.0",
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/style-resources": "^1.2.1",

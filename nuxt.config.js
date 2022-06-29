@@ -34,7 +34,7 @@ export default {
       { src:'/js/bootstrap.bundle.min.js', body:true },
       { src:'/js/jquery.min.js', body:true },
       { src:'/js/waypoints.min.js', body:true },
-      { src:'/js/jquery.easing.min.js', body:true },
+      { src:'/js/jquery.easing.min.js', body:true},
       { src:'/js/owl.carousel.min.js', body:true },
       { src:'/js/jquery.magnific-popup.min.js', body:true },
       { src:'/js/jquery.counterup.min.js', body:true },
@@ -42,7 +42,7 @@ export default {
       { src:'/js/jquery.passwordstrength.js', body:true },
       { src:'/js/jquery.nice-select.min.js', body:true },
       { src:'/js/theme-switching.js', body:true },
-      { src:'/js/no-internet.js' },
+      //{ src:'/js/no-internet.js' },
       { src:'/js/active.js', body:true },
 
     ]
@@ -64,9 +64,12 @@ export default {
       lang: 'en',
     },
   },
-  build: {},
+  build: {
+    publicPath: '/dist/',
+    extend(config, ctx) {}
+  },
   server: {
-    port: 8000,
+    port: 1090,
     host: '0.0.0.0',
     timing: false
   }

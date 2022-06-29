@@ -15,7 +15,7 @@
         <SideNav />
       </div>
     </div>
-    <PwaInstallAlert />
+    <!-- <PwaInstallAlert /> -->
     <div class="page-content-wrapper">
       <!--<SearchForm />-->
       <Hero />
@@ -30,7 +30,7 @@
       <Collections/>
     </div>
     <!-- Internet Connection Status-->
-    <div class="internet-connection-status" id="internetStatus"></div>
+    <!-- <div class="internet-connection-status" id="internetStatus"></div> -->
     <FooterNav/>
   </div>
 </template>

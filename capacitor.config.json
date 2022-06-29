@@ -1,0 +1,6 @@
+{
+  "appId": "com.caeg0n.campdescontos",
+  "appName": "Camp Descontos",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

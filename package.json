@@ -9,7 +9,8 @@
     "generate": "nuxt generate",
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:prettier",
-    "lintfix": "prettier --write --list-different ."
+    "lintfix": "prettier --write --list-different .",
+    "generate-capacitor": "nuxt generate --no-ssr && npx cap copy"
   },
   "dependencies": {
     "@capacitor/android": "^3.6.0",

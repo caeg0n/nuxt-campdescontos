@@ -31,3 +31,8 @@
     </div>
   </div>
 </template>
+<style>
+#headerArea{
+  background-color: #f2f547 !important;
+}
+</style>

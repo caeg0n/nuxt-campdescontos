@@ -8,7 +8,7 @@
       id="suhaOffcanvas"
       aria-labelledby="suhaOffcanvasLabel"
     >
-      <CloseButton/>
+      <CloseButton />
       <!-- Offcanvas body-->
       <div class="offcanvas-body">
         <SidenavProfile />
@@ -22,16 +22,16 @@
       <ProductCategory />
       <FlashSale />
       <!--<DarkMode />-->
-      <TopProducts />
-      <CtaArea />
-      <WeeklyBestSellers/>
-      <DiscountCouponCard />
-      <FeaturedProductsWrapper/>
-      <Collections/>
+      <!-- <TopProducts /> -->
+      <!-- <CtaArea /> -->
+      <WeeklyBestSellers />
+      <!-- <DiscountCouponCard /> -->
+      <!-- <FeaturedProductsWrapper /> -->
+      <!-- <Collections /> -->
     </div>
     <!-- Internet Connection Status-->
     <!-- <div class="internet-connection-status" id="internetStatus"></div> -->
-    <FooterNav/>
+    <FooterNav />
   </div>
 </template>
 
@@ -74,7 +74,7 @@ export default {
     FeaturedProductsWrapper,
     Collections,
     FooterNav,
-    CloseButton
+    CloseButton,
   },
   layout: 'home',
   name: 'HomePage',

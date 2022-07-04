@@ -6,7 +6,6 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover,shrink-to-fit=no' },
       { name: 'description', content: 'Suha - Multipurpose Ecommerce Mobile HTML Template' },
-      { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
       { name: 'theme-color', content: '#100DD1' },
       { name: 'apple-mobile-web-app-capable', content:'yes' },
       { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }
@@ -22,7 +21,7 @@ export default {
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/img/icons/icon-180x180.png' },
       { rel: 'stylesheet', href: '/css/bootstrap.min.css' },
       { rel: 'stylesheet', href: '/css/animate.css' },
-      { rel: 'stylesheet', href: '/css/all.min.css' },
+      { rel: 'stylesheet', href: '/css/all.min.css',async:true },
       { rel: 'stylesheet', href: '/css/brands.min.css' },
       { rel: 'stylesheet', href: '/css/solid.min.css' },
       { rel: 'stylesheet', href: '/css/owl.carousel.min.css' },
@@ -31,21 +30,24 @@ export default {
       { rel: 'stylesheet', href: '/style.css' }
     ],
     script: [
-      { src:'/js/bootstrap.bundle.min.js', body:true },
-      { src:'/js/jquery.min.js', body:true },
-      { src:'/js/waypoints.min.js', body:true },
-      { src:'/js/jquery.easing.min.js', body:true},
-      { src:'/js/owl.carousel.min.js', body:true },
-      { src:'/js/jquery.magnific-popup.min.js', body:true },
-      { src:'/js/jquery.counterup.min.js', body:true },
-      { src:'/js/jquery.countdown.min.js', body:true },
-      { src:'/js/jquery.passwordstrength.js', body:true },
-      { src:'/js/jquery.nice-select.min.js', body:true },
-      { src:'/js/theme-switching.js', body:true },
-      //{ src:'/js/no-internet.js' },
-      { src:'/js/active.js', body:true },
+      { src:'/js/bootstrap.bundle.min.js', body:true,type: 'module' },
+      { src:'/js/jquery.min.js', body:true,type: 'module' },
+      { src:'/js/waypoints.min.js', body:true,type: 'module' },
+      { src:'/js/jquery.easing.min.js', body:true,type: 'module'},
+      { src:'/js/owl.carousel.min.js', body:true,type: 'module' },
+      { src:'/js/jquery.magnific-popup.min.js', body:true,type: 'module' },
+      { src:'/js/jquery.counterup.min.js', body:true,type: 'module' },
+      { src:'/js/jquery.countdown.min.js', body:true,type: 'module' },
+      { src:'/js/jquery.passwordstrength.js', body:true,type: 'module' },
+      { src:'/js/jquery.nice-select.min.js', body:true,type: 'module'},
+      { src:'/js/theme-switching.js', body:true,type: 'module' },
+      { src:'/js/no-internet.js' },
+      { src:'/js/active.js', body:true,type: 'module' },
 
     ]
+  },
+  loading: {
+    color: '#fff'
   },
   plugins: [
     {src: 'plugins/owl.js', ssr: false}
@@ -65,7 +67,12 @@ export default {
     },
   },
   build: {
-    publicPath: '/dist/',
+    publicPath: '/nuxt/',
+    hotMiddleware: {
+      client: {
+        autoConnect: false
+      }
+    },
     extend(config, ctx) {}
   },
   server: {

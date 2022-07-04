@@ -6,28 +6,28 @@
       >
         <li>
           <a href="home.html" style="color: black"
-            ><i class="fa-solid fa-house"></i>Home</a
+            ><i class="fa-solid fa-house"></i>Inicio</a
           >
         </li>
-        <li>
+        <!-- <li>
           <a href="message.html" style="color: black"
             ><i class="fa-solid fa-comment-dots"></i>Chat</a
           >
-        </li>
+        </li> -->
         <li>
           <a href="cart.html" style="color: black"
             ><i class="fa-solid fa-bag-shopping"></i
-            >Basket</a
+            >Cupons</a
           >
         </li>
-        <li>
+        <!-- <li>
           <a href="settings.html" style="color: black"
             ><i class="fa-solid fa-gear"></i>Settings</a
           >
-        </li>
+        </li> -->
         <li>
           <a href="pages.html" style="color: black"
-            ><i class="fa-solid fa-heart"></i>Pages</a
+            ><i class="fa-solid fa-user"></i>Comerciante</a
           >
         </li>
       </ul>

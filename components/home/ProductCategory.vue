@@ -2,19 +2,22 @@
   <div class="product-catagories-wrapper py-3">
     <div class="container">
       <div class="row g-2 rtl-flex-d-row-r">
+
         <!-- Catagory Card -->
-        <div class="col-3">
+        <div class="col-3" v-for="supercategory in supercategories[0]" :key="supercategory.id">
           <div class="card catagory-card">
             <div class="card-body px-2">
-              <a href="catagory.html"
+              <a href=""
                 ><img src="img/core-img/woman-clothes.png" alt="" /><span
-                  >Women's Fashion</span
+                  >{{supercategory.name}}</span
                 ></a
               >
             </div>
           </div>
         </div>
-        <!-- Catagory Card -->
+
+
+        <!-- Catagory Card
         <div class="col-3">
           <div class="card catagory-card">
             <div class="card-body px-2">
@@ -26,7 +29,9 @@
             </div>
           </div>
         </div>
-        <!-- Catagory Card -->
+        -->
+
+        <!-- Catagory Card
         <div class="col-3">
           <div class="card catagory-card">
             <div class="card-body px-2">
@@ -38,7 +43,9 @@
             </div>
           </div>
         </div>
-        <!-- Catagory Card -->
+        -->
+
+        <!-- Catagory Card
         <div class="col-3">
           <div class="card catagory-card">
             <div class="card-body px-2">
@@ -50,7 +57,9 @@
             </div>
           </div>
         </div>
-        <!-- Catagory Card -->
+        -->
+
+        <!-- Catagory Card
         <div class="col-3">
           <div class="card catagory-card">
             <div class="card-body px-2">
@@ -62,7 +71,9 @@
             </div>
           </div>
         </div>
-        <!-- Catagory Card -->
+        -->
+
+        <!-- Catagory Card
         <div class="col-3">
           <div class="card catagory-card">
             <div class="card-body px-2">
@@ -74,7 +85,9 @@
             </div>
           </div>
         </div>
-        <!-- Catagory Card -->
+        -->
+
+        <!-- Catagory Card
         <div class="col-3">
           <div class="card catagory-card">
             <div class="card-body px-2">
@@ -86,7 +99,9 @@
             </div>
           </div>
         </div>
-        <!-- Catagory Card -->
+        -->
+
+        <!-- Catagory Card
         <div class="col-3">
           <div class="card catagory-card active">
             <div class="card-body px-2">
@@ -98,7 +113,24 @@
             </div>
           </div>
         </div>
+        -->
+
+
       </div>
     </div>
   </div>
 </template>
+<script>
+export default {
+  props: {
+    supercategories:{
+      type: Array,
+      required: true
+    },
+  },
+
+  mounted(){
+  }
+
+}
+</script>

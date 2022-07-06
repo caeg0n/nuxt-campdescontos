@@ -21,7 +21,7 @@ export default {
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/img/icons/icon-180x180.png' },
       { rel: 'stylesheet', href: '/css/bootstrap.min.css' },
       { rel: 'stylesheet', href: '/css/animate.css' },
-      { rel: 'stylesheet', href: '/css/all.min.css',async:true },
+      { rel: 'stylesheet', href: '/css/all.min.css' },
       { rel: 'stylesheet', href: '/css/brands.min.css' },
       { rel: 'stylesheet', href: '/css/solid.min.css' },
       { rel: 'stylesheet', href: '/css/owl.carousel.min.css' },
@@ -56,10 +56,11 @@ export default {
   buildModules: [],
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/proxy',
     '@nuxtjs/pwa',
   ],
   axios: {
-    baseURL: '/',
+    baseURL: 'http://172.29.138.250:3000'
   },
   pwa: {
     manifest: {
@@ -70,7 +71,7 @@ export default {
     publicPath: '/nuxt/',
     hotMiddleware: {
       client: {
-        autoConnect: false
+        autoConnect: true
       }
     },
     extend(config, ctx) {}
@@ -78,6 +79,6 @@ export default {
   server: {
     port: 1090,
     host: '0.0.0.0',
-    timing: false
+    timing: true
   }
 }

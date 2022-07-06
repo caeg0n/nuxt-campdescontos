@@ -19,7 +19,7 @@
     <div class="page-content-wrapper">
       <!--<SearchForm />-->
       <Hero />
-      <ProductCategory />
+      <ProductCategory :supercategories="supercategories" />
       <FlashSale />
       <!--<DarkMode />-->
       <!-- <TopProducts /> -->
@@ -78,7 +78,22 @@ export default {
   },
   layout: 'home',
   name: 'HomePage',
-  mounted() {
+
+  computed: {
+    supercategories(){
+      if (typeof(this.$store.state.supercategory.items[0])=='object'){
+        return this.$store.state.supercategory.items
+      }else{
+        return []
+      }
+    }
+  },
+
+  async created(){
+    await this.$store.dispatch('supercategory/setAllSuperCategories')
+  },
+
+  async mounted() {
     $('#collection-component').owlCarousel({
       autoplay: true,
       margin: 10,
